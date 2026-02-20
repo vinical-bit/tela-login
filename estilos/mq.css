@@ -5,12 +5,12 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);    
     }
 
-    section#Loguin{
+    section#loguin{
         width: 80vw;
         height: 280px;
     }
     
-    section#Loguin > div#img{
+    section#loguin > div#img{
         float: left;
         width: 30%;
         height: 100%;
@@ -27,12 +27,12 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);    
     }
 
-    section#Loguin{
+    section#loguin{
         width: 950px;
         height: 350px;
     }
     
-    section#Loguin > div#img{
+    section#loguin > div#img{
         float: right;
         width: 50%;
         height: 100%;

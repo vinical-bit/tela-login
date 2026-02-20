@@ -1,4 +1,4 @@
-@charset 'UTF-8';
+@charset "UTF-8";
 
 :root{
     --color1: #49a09d; 
@@ -24,7 +24,7 @@ main{
     width: 100vw;
 }
 
-section#Loguin{
+section#loguin{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -40,7 +40,7 @@ section#Loguin{
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
 }
-section#Loguin > div#img{
+section#loguin > div#img{
     display: block;
     background: var(--color2) url(../img/metal.jpg) no-repeat;
     background-size: cover;
@@ -48,7 +48,7 @@ section#Loguin > div#img{
     height: 200px;
 }
 
-section#Loguin > div#form{
+section#loguin > div#form{
     display: block;
     padding: 10px;
 }
@@ -64,16 +64,41 @@ div#form > p{
 
 form > div.campo{
     background-color: var(--color2);
+    display: 2px solid #5f2c82 ;
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
-    
+   
+
 }
 
 div.campo > label{
     display: none;
+}
+div.campo i {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+    
+
+}
+
+div.campo input{
+    background-color: #94cfcd;
+    font-size: 1em;
+    width: calc(100% - 50px);
+    transform: translatey(-11px);
+    height: 85%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]{
@@ -112,6 +137,6 @@ form > a.botom:hover{
     background-color: #49a09d;
 }
 
-form > a.botom > span{
+form > a.botom > i{
     font-size: 0.8em;
 }
