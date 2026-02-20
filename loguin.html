@@ -6,24 +6,32 @@
     <title>Loguin</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mq.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <main>
         <section id="Loguin">
             <div id="img">
-                foto
+                
             </div>
             <div id="form">
                 <h1>Loguin</h1>
                 <p>Seja Bem-vindo(a) novamente. Faça loguin para acessar sua conta e poder fazer as configurações no seu ambiente </p>
                 <form action="loguin.php" method="post">
-                    <p>
-                        <Label id="user">user: </Label>
-                        <input type="text" name="user" id="user" required minlength="3" maxlength="30" placeholder="Nome de usuario">
-                    </p>
-                    <p>
-                        <Label id="sen">senha: </Label>
-                    </p>
+                        <div class="campo">
+                           <span class="material-icons">person</span>
+                            <input type="email" name="user" id="user" required minlength="3" maxlength="30" placeholder="name@gmail.com" autocomplete="email" size="15">
+                             <Label for="user">Loguin</Label>
+                        </div>
+                        <div class="campo">
+                            <span class="material-icons">vpn_key</span>
+                            <input type="password" name="sen" id="sen" required min="5" max="30" placeholder="senha" autocomplete="current-password" size="15">
+                            <Label for="sen">senha</Label>
+                        </div>
+                        <input type="submit" value="Entrar">
+                        <a href="esqueci,html" class="botom">
+                            Esqueci a senha <span class="material-icons">maill</span>
+                        </a>
                 </form>
             </div>
         </section>

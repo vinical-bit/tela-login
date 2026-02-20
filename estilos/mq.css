@@ -7,15 +7,16 @@
 
     section#Loguin{
         width: 80vw;
+        height: 280px;
     }
     
-    #Loguin > #img{
+    section#Loguin > div#img{
         float: left;
         width: 30%;
         height: 100%;
     }
 
-    #loguin > #form{
+    section#loguin > div#form{
         float: right;
         width: 70%;
     } 
@@ -28,16 +29,26 @@
 
     section#Loguin{
         width: 950px;
+        height: 350px;
     }
     
-    #Loguin > #img{
-        float: left;
+    section#Loguin > div#img{
+        float: right;
         width: 50%;
         height: 100%;
     }
 
-    #loguin > #form{
-        float: right;
+    section#loguin > div#form{
+        float: left;
         width: 50%;
     } 
+
+    div#form > h1 {
+        font-size: 2em;
+    }
+    
+    div#form > p{
+        font-size: 1.2em;
+        margin: 20px 0px;
+    }
 }
